@@ -1,0 +1,533 @@
+.under-line{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $primary;
+    width: 50%;
+    height: 4px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $secondary;
+    width: 50%;
+    height: 4px;
+  }
+}
+.banner-outline{
+  padding: 79px 78px 66px 76px;
+  @include media-breakpoint-down(xxl) {
+      padding: 28px;
+  }
+  @include media-breakpoint-down(sm) {
+      padding: 0;
+  }
+}
+
+
+.banner {
+  background-color: #202020;
+  padding: 46px 50px;
+  @include media-breakpoint-only(xl) {
+    padding: 46px 20px;
+  }
+  @include media-breakpoint-only(lg) {
+      padding: 46px 15px;
+  }
+  @include media-breakpoint-only(md) {
+      padding: 46px 10px;
+  }
+  @include media-breakpoint-only(sm) {
+      padding: 40px 0;
+  }
+}
+.banner .square:last-child h2 span{
+  @include media-breakpoint-only(lg) {
+    font-size: 40px;
+    line-height: 32px;
+  }
+  @include media-breakpoint-only(md) {
+    font-size: 32px;
+    line-height:20px;
+  }
+}
+
+.bg-img{
+  height: 535px;
+  background-image: url(../images/bg_home.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-breakpoint-down(sm) {
+      background-image: url(../images/bg_home_mobile.jpg);
+  }
+}
+.feature{
+  // line-height: $line-height-26;
+  .feature-outline{
+    border: 1px solid $gray-light;
+    &:hover{
+      border: 1px solid $primary !important;
+      background-color: #202020;
+      cursor: pointer;
+      border-radius: 12px;
+      .icon{
+        @include text-gradient-y;
+      }
+    }
+    .icon{
+      font-size: 50px;
+      color: $white;
+      @include media-breakpoint-down(sm) {
+        font-size: 42px;
+      }
+    }
+  }
+}
+.feature-item{
+  padding: 48px 10px;
+  background: $gray-light;
+  // border: 1px solid $black;
+  // border: 0;
+  &:hover{
+    background: #202020;
+    border-radius: 12px;
+  }
+  @include media-breakpoint-down(xl) {
+      padding: 48px 0;
+  }
+}
+
+.flow{
+  .card{
+    padding: 48px;
+    @include media-breakpoint-only(lg) {  
+      padding: 48px 24px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.slogan{
+  position: relative;
+  padding-bottom: 17px;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+    bottom: 0;
+    left: 0;
+    @include media-breakpoint-down(md) {
+      left: calc(50% - 32px);
+    }
+  }
+}
+
+footer{
+  @include media-breakpoint-down(sm) {
+    p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+  }
+}
+.popular{
+  .popular-class{     
+    border: 2px solid transparent;
+    background-color: $gray-light;
+    &:hover{
+      border: 2px solid $primary;
+    }
+  }
+  .photo{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.share-article{
+  .card{
+    background-color: $gray-light;
+  }
+}
+
+.flow,.course-category,.popular,.share-article{
+  background-color: $gray-light;
+  color: $white;
+  .title{
+    position: relative;
+    margin-bottom: 74px;
+    // line-height: $line-height-40;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: $primary;
+      bottom: 0;
+      left: calc(50% - 32px);
+    }
+  }
+}
+.course-category{
+  .title{
+    font-size: 28px;
+    line-height: 40px;
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+}
+
+.swiper .swipery{
+  width: 100%;
+  height: 100%;
+}
+.class-tag{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.class-category-tag{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 16px 0;
+  &:hover{
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}
+.w-200{
+  width: 200px !important;
+}
+.number{
+  font-size: 48px;
+  line-height: 56px;
+  top: -30px;
+  left: 38px;
+}
+
+.advantage-items {
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 615px;
+  &::before{
+    content: '';
+    background-color: #1c1c1c;
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
+  &:hover .title::after{
+    color: $primary;
+    background-color: $primary;
+  }
+  &:hover{
+    &::before{
+      opacity: .12;
+    }
+    & .icon{
+      color: $primary;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    height: 263px;
+  }
+}
+
+.bg-1{
+  background-image: url(../../../assets/images/info01.jpg);
+  // padding: 0 48px;
+}
+.bg-2{
+  background-image: url(../../../assets/images/info02.jpg);
+  // padding: 0 48px;
+}
+.bg-3{
+  background-image: url(../../../assets/images/info03.jpg);
+  // padding: 0 48px;
+}
+.bg-4{
+  background-image: url(../../../assets/images/info04.jpg);
+  // padding: 0 48px;
+}
+.all-courser-btn{
+  @include bg-gradient-x;
+  border: 1px solid transparent;
+  &::before{
+    content: '所有課程列表';
+  }
+  &:hover{
+    border: 1px solid $white !important;
+    background: $black;
+    color: $white;
+    &::before{
+      content: '立即預約';
+    }
+  }
+}
+.advantage-card{
+  width: 264px;
+  position:absolute; 
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:$white;
+  .title{
+    position: relative;
+    padding-bottom: 16px;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: $white;
+      bottom: 0;
+      left: 0;
+      &:hover{
+        background-color: $primary;
+      }
+    }
+  }
+  .icon{
+    font-size: 30px;
+  }
+}
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-top-left-radius: 10px;
+  }
+  &-topRight {
+    border-top: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-top-right-radius: 10px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-bottom-left-radius: 10px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-bottom-right-radius: 10px;
+  }
+}
+.card:hover {
+  .squareRounded {
+    display: block;
+  }
+}
+
+
+
+.join{
+  background-color: #202020;
+  padding: 51px 48px;
+  .icon{
+    font-size: 104px;
+    // height: 80px;
+  }
+}
+.booking-btn{
+  @include bg-gradient-x;
+  border: 1px solid transparent;
+  &::before{
+    content: '聯絡我們';
+  }
+  &:hover{
+    border: 1px solid $white !important;
+    background: $black;
+    color: $white;
+    &::before{
+      content: '立即預約';
+    }
+  }
+}
+
+.booking-now{
+  border: 0;
+  &:hover{
+    background: $gray-light !important;
+    border: 1px solid $white;
+    color: $white;
+  }
+}
+
+.slider{
+  .swiper {
+    width: 100%;
+    height: 429px;
+    @media (max-width:991px) {
+      height: auto;
+    }
+    &-img {
+      top: 0;
+      left: 10px;
+      width: 60%;
+      height: 90%;
+      border-radius: 24px;
+      position: absolute;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #7C7E77;
+        border-radius: 24px;
+        left: -10px;
+        top: 10px;
+        z-index: -1;
+        @media (max-width:991px) {
+          left: -5px;
+          top: 5px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+      @media (max-width:991px) {
+        position: relative;
+        width: calc(100% - 5px);
+        height: 213px;
+        left: 5px;
+        margin-bottom: 40px;
+      }
+    }
+    .card {
+      width: 45%;
+      padding: 32px;
+      border-radius: 24px 24px 24px 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      h3 {
+        font-size: 18px;
+      }
+      &-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 32px;
+        bottom: 100%;
+        transform: translateY(50%);
+        @media (max-width:991px) {
+          width: 80px;
+          height: 80px;
+          right: 24px;
+          top: -30px;
+          bottom: auto;
+          transform: none;
+        }
+      }
+      @media (max-width:991px) {
+        position: relative;
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 32px;
+      }
+    }
+  
+    .swiper-button-next:after, .swiper-button-prev:after {
+      content: '';
+    }
+  
+    &-button-next, &-button-prev {
+      position: unset;
+      width: 24px;
+      height: 24px;
+      margin-top: -27px;
+      color: $primary;
+    }
+  
+    .swiper-pagination {
+      position: unset;
+      width: auto;
+      .swiper-pagination-bullet {
+        background-color: $primary;
+        opacity: initial;
+        &-active {
+          width: 16px;
+          border-radius: 100px;
+        }
+      }
+    }
+  
+    &-buttons {
+      bottom: -1px;
+      left: 30%;
+      transform: translateX(-50%);
+      z-index: 10;
+      position: absolute;
+      height: 24px;
+      @media (max-width: 991px) {
+        position: initial;
+        transform: none;
+      }
+    }
+  }
+}
+
+
+//@at-root
+.class-card{
+  .photo{
+    width: 196px;
+  }
+  .intro{
+    width: 576px;
+  }
+  .more{
+    width: 168px;
+
+  }
+}
+@include media-breakpoint-down(md) {
+  .class-card .intro {
+    width: 100%;
+  }
+  .class-card .photo{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .class-card .more {
+    width: 100%;
+  }
+  .btn-area {
+    width: 100%;
+  }
+  .btn-area a{
+    width: 48%
+  }
+}
