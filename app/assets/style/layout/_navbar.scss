@@ -1,3 +1,19 @@
+.navbar-brand{
+  display: block;
+  width: 174px;
+  height: 42px;
+  background-image: url(../../../assets/images/logo.svg);
+  background-size: cover;
+  background-position: center center; 
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  @include media-breakpoint-down(sm) {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../assets/images/logo2.svg);
+  }
+}
 .under-line{
     position: relative;
     &::before{
