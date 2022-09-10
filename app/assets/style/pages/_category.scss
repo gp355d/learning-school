@@ -1,0 +1,30 @@
+.class-card{
+    .photo{
+      width: 196px;
+    }
+    .intro{
+      width: 576px;
+    }
+    .more{
+      width: 168px;
+  
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .class-card .intro {
+      width: 100%;
+    }
+    .class-card .photo{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .class-card .more {
+      width: 100%;
+    }
+    .btn-area {
+      width: 100%;
+    }
+    .btn-area a{
+      width: 48%
+    }
+  }

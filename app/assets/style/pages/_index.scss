@@ -1,24 +1,4 @@
-.under-line{
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: $primary;
-    width: 50%;
-    height: 4px;
-  }
-  &::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: $secondary;
-    width: 50%;
-    height: 4px;
-  }
-}
+@import "../layout/navbar.scss";
 .banner-outline{
   padding: 79px 78px 66px 76px;
   @include media-breakpoint-down(xxl) {
@@ -138,14 +118,7 @@
   }
 }
 
-footer{
-  @include media-breakpoint-down(sm) {
-    p{
-        font-size: 12px;
-        line-height: 14px;
-    }
-  }
-}
+
 .popular{
   .popular-class{     
     border: 2px solid transparent;
@@ -501,33 +474,4 @@ footer{
 
 
 //@at-root
-.class-card{
-  .photo{
-    width: 196px;
-  }
-  .intro{
-    width: 576px;
-  }
-  .more{
-    width: 168px;
-
-  }
-}
-@include media-breakpoint-down(md) {
-  .class-card .intro {
-    width: 100%;
-  }
-  .class-card .photo{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .class-card .more {
-    width: 100%;
-  }
-  .btn-area {
-    width: 100%;
-  }
-  .btn-area a{
-    width: 48%
-  }
-}
+@import "../layout/footer";
