@@ -499,3 +499,36 @@
 
 //@at-root
 @import "../layout/footer";
+.loginway{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  &::before{
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: $gray-white-light;
+  }
+  &::after{
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: $gray-white-light;
+  }
+}
+.fb-way,.google-way{
+  &:hover{
+    border: 1px solid $primary !important;
+  }
+  img{
+    width: 24px;
+    height: 24px;
+  }
+  .icon{
+    left: 32px;
+  }
+}
+.max-331{
+  max-width: 331px;
+  margin: 0 auto;
+}

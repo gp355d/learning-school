@@ -20,6 +20,7 @@ $black:    #000 !default;
 //新增色系
 $gray-dark: #1C1C1C;
 $gray-light:#2D2D2D;
+$gray-white-light:#c1c1c1;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -71,7 +72,8 @@ $colors: (
   //新增色系
   "gray-dark":  $gray-dark,
   "$gray-light": $gray-light,
-  "gray-white": $gray-white
+  "gray-white": $gray-white,
+  "gray-white-light": $gray-white-light
 ) !default;
   
 
@@ -102,6 +104,7 @@ $theme-colors: (
   "gray-dark": $gray-dark,
   "gray-light": $gray-light,
   "gray-white": $gray-white,
+  "c": $gray-white-light,
   "black": $black
 ) !default;
 // scss-docs-end theme-colors-map
@@ -671,8 +674,10 @@ $input-btn-border-width:      $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-$btn-padding-y:               $input-btn-padding-y !default;
-$btn-padding-x:               $input-btn-padding-x !default;
+// $btn-padding-y:               $input-btn-padding-y !default;
+// $btn-padding-x:               $input-btn-padding-x !default;
+$btn-padding-y:               $spacer * .5;
+$btn-padding-x:               $spacer * 2;
 $btn-font-family:             $input-btn-font-family !default;
 $btn-font-size:               $input-btn-font-size !default;
 $btn-line-height:             $input-btn-line-height !default;
@@ -1483,8 +1488,10 @@ $spinner-border-width-sm: .2em !default;
 // Close
 
 // scss-docs-start close-variables
-$btn-close-width:            1em !default;
-$btn-close-height:           $btn-close-width !default;
+// $btn-close-width:            1em !default;
+// $btn-close-height:           $btn-close-width !default;
+$btn-close-width:            14px;
+$btn-close-height:           14px;
 $btn-close-padding-x:        .25em !default;
 $btn-close-padding-y:        $btn-close-padding-x !default;
 $btn-close-color:            $black !default;
