@@ -1,0 +1,114 @@
+---
+title: 課程報名
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="bg-gray-dark pt-4 pb-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-9 col-md-7 timeline">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-md-5">
+          <div class="timeline-pointer text-center step-1 active">
+            <p>課程報名</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="timeline-pointer text-center step-2 ">
+            <p>信用卡付款</p>
+          </div>
+        </div>
+        <div class="col-3 col-md-5">
+          <div class="timeline-pointer text-center step-3">
+            <p>付款成功</p>
+          </div> 
+        </div>
+      </div>
+    </div>
+</section>
+<section class="bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="register card h-100 bg-gray-dark rounded-0 p-4 px-lg-5 py-lg-7">
+                    <div class="card-body text-white p-0">
+                        <img src="./assets/images/teacher01.jpg" class="photo rounded-circle border border-3 border-primary mb-3 mb-lg-4" alt="teacher01" width="100" height="100">
+                        <h3 class="card-title fs-8 lh-26 pb-lg-1 text-center">2022 Python 全攻略｜從入門到實務</h3>
+                        <p class="text-primary pb-2 text-center">前端語言</p>
+                        <p class="card-text">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <form action="#" method="get" class="signup-form bg-gray-light p-4 py-lg-7 px-lg-5">
+                    <h1 class="fs-5 lh-35 text-white text-center mb-4 mb-lg-7">課程報名</h1>
+                    <fieldset class="mb-5">
+                        <legend class="fs-5 text-center text-lg-start fw-bold mb-3">選擇付款方式</legend>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="payment" value="credit_card" id="paymentRadio1" autocomplete="off" checked="">
+                            <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio1">信用卡付款</label>
+                            
+                            <input type="radio" class="btn-check" name="payment" value="cvs" id="paymentRadio2" autocomplete="off">
+                            <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio2">超商繳款</label>
+                            
+                            <input type="radio" class="btn-check" name="payment" value="atm" id="paymentRadio3" autocomplete="off">
+                            <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio3">ATM 轉帳</label>
+                            
+                            <input type="radio" class="btn-check" name="payment" value="installment" id="paymentRadio4" autocomplete="off">
+                            <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio4">12期分期付款</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="fs-5 text-center text-lg-start fw-bold mb-3">訂單資訊</legend>
+                        <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+                            <div class="col mb-3 mb-lg-0">
+                                <label for="SignUp-Name" class="form-label">姓名</label>
+                                <input type="text" name="name" class="form-control" id="SignUp-Name" placeholder="請輸入姓名">
+                            </div>
+                            <div class="col">
+                                <label for="SignUp-Phone" class="form-label">電話</label>
+                                <input type="tel" name="tel" class="form-control" id="SignUp-Phone" placeholder="請輸入電話號碼">
+                            </div>
+                        </div>
+                        <div class="mb-3 mb-lg-4">
+                            <label for="SignUp-Email" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" id="SignUp-Email" placeholder="請輸入Email">
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+                            <div class="col mb-3 mb-lg-0">
+                                <p class="form-label">課程</p>
+                                <select class="lesson-select form-select" aria-label="lessons select">
+                                    <option name="lesson" value="0" selected="">請選擇課程</option>
+                                    <option name="lesson" value="1">1堂50分鐘</option>
+                                    <option name="lesson" value="2">3堂50分鐘</option>
+                                    <option name="lesson" value="3">10堂50分鐘</option>
+                                    <option name="lesson" value="4">20堂50分鐘</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <p class="form-label">想預約的日期</p>
+                                <input type="text" class="form-control datepicker-input" name="datepicker" placeholder="請選擇日期"><div class="datepicker datepicker-dropdown"><div class="datepicker-picker"><div class="datepicker-header"><div class="datepicker-title" style="display: none;"></div><div class="datepicker-controls"><button type="button" class="button prev-btn">«</button><button type="button" class="button view-switch">2022年09月</button><button type="button" class="button next-btn">»</button></div></div><div class="datepicker-main"><div class="datepicker-view"><div class="days"><div class="days-of-week"><span class="dow">日</span><span class="dow">一</span><span class="dow">二</span><span class="dow">三</span><span class="dow">四</span><span class="dow">五</span><span class="dow">六</span></div><div class="datepicker-grid"><span class="datepicker-cell day prev" data-date="1661616000000">28</span><span class="datepicker-cell day prev" data-date="1661702400000">29</span><span class="datepicker-cell day prev" data-date="1661788800000">30</span><span class="datepicker-cell day prev" data-date="1661875200000">31</span><span class="datepicker-cell day" data-date="1661961600000">1</span><span class="datepicker-cell day" data-date="1662048000000">2</span><span class="datepicker-cell day" data-date="1662134400000">3</span><span class="datepicker-cell day" data-date="1662220800000">4</span><span class="datepicker-cell day" data-date="1662307200000">5</span><span class="datepicker-cell day" data-date="1662393600000">6</span><span class="datepicker-cell day" data-date="1662480000000">7</span><span class="datepicker-cell day" data-date="1662566400000">8</span><span class="datepicker-cell day" data-date="1662652800000">9</span><span class="datepicker-cell day" data-date="1662739200000">10</span><span class="datepicker-cell day" data-date="1662825600000">11</span><span class="datepicker-cell day" data-date="1662912000000">12</span><span class="datepicker-cell day focused" data-date="1662998400000">13</span><span class="datepicker-cell day" data-date="1663084800000">14</span><span class="datepicker-cell day" data-date="1663171200000">15</span><span class="datepicker-cell day" data-date="1663257600000">16</span><span class="datepicker-cell day" data-date="1663344000000">17</span><span class="datepicker-cell day" data-date="1663430400000">18</span><span class="datepicker-cell day" data-date="1663516800000">19</span><span class="datepicker-cell day" data-date="1663603200000">20</span><span class="datepicker-cell day" data-date="1663689600000">21</span><span class="datepicker-cell day" data-date="1663776000000">22</span><span class="datepicker-cell day" data-date="1663862400000">23</span><span class="datepicker-cell day" data-date="1663948800000">24</span><span class="datepicker-cell day" data-date="1664035200000">25</span><span class="datepicker-cell day" data-date="1664121600000">26</span><span class="datepicker-cell day" data-date="1664208000000">27</span><span class="datepicker-cell day" data-date="1664294400000">28</span><span class="datepicker-cell day" data-date="1664380800000">29</span><span class="datepicker-cell day" data-date="1664467200000">30</span><span class="datepicker-cell day next" data-date="1664553600000">1</span><span class="datepicker-cell day next" data-date="1664640000000">2</span><span class="datepicker-cell day next" data-date="1664726400000">3</span><span class="datepicker-cell day next" data-date="1664812800000">4</span><span class="datepicker-cell day next" data-date="1664899200000">5</span><span class="datepicker-cell day next" data-date="1664985600000">6</span><span class="datepicker-cell day next" data-date="1665072000000">7</span><span class="datepicker-cell day next" data-date="1665158400000">8</span></div></div></div></div><div class="datepicker-footer"><div class="datepicker-controls"><button type="button" class="button today-btn" style="display: none;">今天</button><button type="button" class="button clear-btn" style="display: none;">清除</button></div></div></div></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="SignUp-Place" class="form-label">上課地點</label>
+                            <input type="text" name="place" class="form-control" id="SignUp-Place" placeholder="請輸入上課地點">
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col mb-4 mb-lg-0 d-flex align-items-center">
+                                <p class="signUp-price font-monospace fs-5"></p>
+                            </div>
+                            <div class="col text-center text-lg-end">
+                                <input type="submit" value="前往結帳" class="btn btn-gradient btn-signUp px-lg-7">
+                            </div>
+                        </div>                            
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+.timeline{
+    position: relative;
+    &::after{
+      position: absolute;
+      content:'';
+      top: 9px;
+      left: 0;  
+      right: 0;
+      height: 2px;
+      background-color: #C1C1C1;
+    }
+    &-pointer{
+      position: relative;
+      color: #c1c1c1;
+      p{
+        padding-top: 24px;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+      &::before{
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid #c1c1c1;
+        border-radius:50%;
+        background-color: #2d2d2d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        z-index: 1;
+      }
+      &.step-1::before{
+        content:"1";
+      }
+      &.step-2::before{
+        content:"2";
+      }
+      &.step-3::before{
+        content:"3";
+      }
+      &.active{
+        color:#62db54;
+        &::before{
+          color: #FFF;
+          background-color: #62db54;
+          border-color: #62db54;;
+        }
+      }
+    }
+  }
+  .register{
+    width: 416px;
+    .card-body{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+  }
