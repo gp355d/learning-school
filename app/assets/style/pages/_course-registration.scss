@@ -7,7 +7,7 @@
       left: 0;  
       right: 0;
       height: 2px;
-      background-color: #C1C1C1;
+      background: $gray-white-light;
     }
     &-pointer{
       position: relative;
@@ -50,71 +50,121 @@
         }
       }
     }
+    &-50::after{
+      background: linear-gradient(to right, $primary 50% ,50%,#C1C1C1);
+    }
+    &-100::after{
+      background: $primary ;
   }
+}
+.timeline-number{
+  &.step-1::before{
+    font-family: "Material Icons";
+    content: "\e876";
+  }
+  &.step-2::before{
+    font-family: "Material Icons";
+    content: "\e876";
+  }
+  &.step-3::before{
+    font-family: "Material Icons";
+    content: "\e876";
+  }
+}
 
-  .timeline2{
+.register{
+    margin-bottom: 44px;
     position: relative;
     &::after{
-      position: absolute;
-      content:'';
-      top: 9px;
-      left: 0;  
-      right: 0;
-      height: 2px;
-      background-color: $primary;
-    }
-    &-pointer{
-      position: relative;
-      color: #c1c1c1;
-      p{
-        padding-top: 24px;
-        margin-bottom: 0;
-        line-height: 1.5;
-      }
-      &::before{
+        content: "";
+        border: 12px solid transparent;
+        border-top-color: #2D2D2D;
         position: absolute;
+        top: calc(100% - 1px);
         left: 50%;
-        transform:translateX(-50%);
-        width: 20px;
-        height: 20px;
-        border: 1px solid #c1c1c1;
-        border-radius:50%;
-        background-color: #2d2d2d;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
-        z-index: 1;
-      }
-      &.step-1::before{
-        font-family: "Material Icons";
-        content: "\e876";
-      }
-      &.step-2::before{
-        font-family: "Material Icons";
-        content:"\e876";
-      }
-      &.step-3::before{
-        font-family: "Material Icons";
-        content:"\e876";
-      }
-      &.active{
-        color:#62db54;
-        &::before{
-          color: #FFF;
-          background-color: #62db54;
-          border-color: #62db54;;
+        transform: translateX(-50%);
+        @include media-breakpoint-up(lg){
+            border: 12px solid transparent;
+            border-left-color: #2D2D2D;
+            top: 50%;
+            left: calc(100% - 1px);
+            transform: translateY(-50%);
         }
-      }
     }
+    @include media-breakpoint-up(lg){
+        box-shadow: 4px 0px 18px 0px #0000002E;
+        .card-title{
+            font-size: 18px !important;
+        }
+    }
+    @include media-breakpoint-up(xl){
+        width: calc(100% - 15px);
+        left: 48px;
+    }
+    .photo{
+      margin: 0 auto;
+      display: block;
+    }
+}
+.gotopay{
+  width: 100%;
+  @include media-breakpoint-up(lg){
+      width: auto;
   }
-
-  .register{
-    width: 416px;
-    .card-body{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
+}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  @include media-breakpoint-up(lg){
+    gap: 16px;
+  }
+  .btn{
+    border-radius: 8px !important;
+  }
+}
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+  color: $primary;
+  background-color: transparent;
+  border-color: $primary;
+}
+.btn-outline-primary{
+  border-color: white !important;
+  color: white !important;
+}
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+  border-color: $primary;
+  color: $primary;
+}
+.btn-outline-primary:hover {
+  color: $primary !important;
+  background-color: transparent;
+  border-color: $primary !important;
+}
+.signup-form{
+  @include media-breakpoint-up(lg){
+      padding-left: 114px !important;
+  }
+}
+  .register-card{
+    padding-top: 48px;
+    padding-bottom: 144px;
+  }
+  input {
+    padding: 8px 16px;
   }
   
+  .form-control, .form-control:focus {
+    border-color: #FFFFFF;
+    background-color: transparent;
+    color: #C1C1C1;
+  }
+  
+  .datepicker-cell:not(.disabled):hover {
+    background-color: #e8e8e8;
+  }
+  
+  .datepicker-cell.selected, .datepicker-cell.selected:hover {
+    background-color: #e8e8e8;
+    color: #000;
+  }

@@ -1,5 +1,11 @@
 $(function() {
   console.log('Hello Bootstrap5');
+  const elem = document.querySelector('input[name="datepicker"]');
+  const datepicker = new Datepicker(elem, {
+    autohide: true,
+    language: 'zh-CN',
+
+  }); 
 });
 
 // var swiper = new Swiper(".course-swiper", {
