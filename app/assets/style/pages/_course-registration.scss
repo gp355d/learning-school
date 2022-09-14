@@ -11,11 +11,10 @@
     }
     &-pointer{
       position: relative;
-      color: #c1c1c1;
+      color: $gray-white-light;
       p{
         padding-top: 24px;
         margin-bottom: 0;
-        line-height: 1.5;
       }
       &::before{
         position: absolute;
@@ -23,9 +22,9 @@
         transform:translateX(-50%);
         width: 20px;
         height: 20px;
-        border: 1px solid #c1c1c1;
+        border: 1px solid $gray-white-light;
         border-radius:50%;
-        background-color: #2d2d2d;
+        background-color: $gray-light;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -42,16 +41,16 @@
         content:"3";
       }
       &.active{
-        color:#62db54;
+        color:$primary;
         &::before{
           color: #FFF;
-          background-color: #62db54;
-          border-color: #62db54;;
+          background-color: $primary;
+          border-color: $primary;;
         }
       }
     }
     &-50::after{
-      background: linear-gradient(to right, $primary 50% ,50%,#C1C1C1);
+      background: linear-gradient(to right, $primary 50% ,50%,$gray-white-light);
     }
     &-100::after{
       background: $primary ;
@@ -78,14 +77,14 @@
     &::after{
         content: "";
         border: 12px solid transparent;
-        border-top-color: #2D2D2D;
+        border-top-color: $gray-light;
         position: absolute;
         top: calc(100% - 1px);
         left: 50%;
         transform: translateX(-50%);
         @include media-breakpoint-up(lg){
             border: 12px solid transparent;
-            border-left-color: #2D2D2D;
+            border-left-color: $gray-light;
             top: 50%;
             left: calc(100% - 1px);
             transform: translateY(-50%);
@@ -155,9 +154,9 @@
   }
   
   .form-control, .form-control:focus {
-    border-color: #FFFFFF;
+    border-color: $white;
     background-color: transparent;
-    color: #C1C1C1;
+    color: $gray-white-light;
   }
   
   .datepicker-cell:not(.disabled):hover {
@@ -166,5 +165,5 @@
   
   .datepicker-cell.selected, .datepicker-cell.selected:hover {
     background-color: #e8e8e8;
-    color: #000;
+    color: $black;
   }
