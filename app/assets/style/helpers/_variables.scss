@@ -88,7 +88,10 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$gray-dark: $gray-dark;
+$gray-light: $gray-light;
 $gray-white: $gray-white;
+$gray-white-light: $gray-white-light;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -104,7 +107,7 @@ $theme-colors: (
   "gray-dark": $gray-dark,
   "gray-light": $gray-light,
   "gray-white": $gray-white,
-  "c": $gray-white-light,
+  "gray-white-light": $gray-white-light,
   "black": $black
 ) !default;
 // scss-docs-end theme-colors-map
