@@ -6,109 +6,119 @@ current: index
 ---
 
 <section class="bg-gray-dark pt-4 pb-3">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-9 col-md-7 timeline">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-9 col-md-7 timeline">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 col-md-5">
+        <div class="timeline-pointer text-center step-1 active">
+          <p>課程報名</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-3 col-md-5">
-          <div class="timeline-pointer text-center step-1 active">
-            <p>課程報名</p>
-          </div>
+      <div class="col-6 col-md-2">
+        <div class="timeline-pointer text-center step-2 ">
+          <p>信用卡付款</p>
         </div>
-        <div class="col-6 col-md-2">
-          <div class="timeline-pointer text-center step-2 ">
-            <p>信用卡付款</p>
-          </div>
-        </div>
-        <div class="col-3 col-md-5">
-          <div class="timeline-pointer text-center step-3">
-            <p>付款成功</p>
-          </div> 
+      </div>
+      <div class="col-3 col-md-5">
+        <div class="timeline-pointer text-center step-3">
+          <p>付款成功</p>
         </div>
       </div>
     </div>
+  </div>
 </section>
 <section class="bg-black register-card">
-    <div class="container">
-        <div class="row g-lg-0 align-items-center pb-lg-0 mb-lg-0 ">
-            <div class="col-lg-4 position-relative">
-                <div class="register card bg-gray-light rounded-0 p-4 px-lg-5 py-lg-7">
-                    <div class="card-body text-white p-0">
-                        <img src="./assets/images/teacher01.jpg" class="photo rounded-circle border border-3 border-primary mb-3 mb-lg-4" alt="teacher01" width="100" height="100">
-                        <h3 class="card-title fs-8 lh-26 pb-lg-1 text-center">2022 Python 全攻略｜從入門到實務</h3>
-                        <p class="text-primary pb-2 text-center">前端語言</p>
-                        <p class="card-text text-start">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <form action="pay.html" method="get" class="signup-form bg-gray-dark py-lg-7 pe-lg-5 p-4">
-                    <h1 class="fs-5 lh-35 text-white text-center mb-4 mb-lg-7">課程報名</h1>
-                    <fieldset class="mb-5">
-                        <legend class="fs-8 lh-26 text-white text-center text-lg-start fw-bold mb-3">選擇付款方式</legend>
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">>
-                            <input type="radio" class="btn-check" name="payment" value="credit_card" id="paymentRadio1" autocomplete="off" checked="">
-                            <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio1">信用卡付款</label>
-                            
-                            <input type="radio" class="btn-check" name="payment" value="cvs" id="paymentRadio2" autocomplete="off">
-                            <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio2">超商繳款</label>
-                            
-                            <input type="radio" class="btn-check" name="payment" value="atm" id="paymentRadio3" autocomplete="off">
-                            <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio3">ATM 轉帳</label>
-                            
-                            <input type="radio" class="btn-check" name="payment" value="installment" id="paymentRadio4" autocomplete="off">
-                            <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio4">12期分期付款</label>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="fs-8 lh-26 text-white text-center text-lg-start fw-bold mb-4">訂單資訊</legend>
-                        <div class="row row-cols-1 row-cols-lg-2 mb-4 mb-lg-4">
-                            <div class="col mb-3 mb-lg-0">
-                                <label for="SignUp-Name" class="form-label text-gray-white-light">姓名</label>
-                                <input type="text" name="name" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Name" placeholder="請輸入姓名">
-                            </div>
-                            <div class="col">
-                                <label for="SignUp-Phone" class="form-label text-gray-white-light">電話</label>
-                                <input type="tel" name="tel" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Phone" placeholder="請輸入電話號碼">
-                            </div>
-                        </div>
-                        <div class="mb-3 mb-lg-4">
-                            <label for="SignUp-Email" class="form-label text-gray-white-light">Email</label>
-                            <input type="email" name="email" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Email" placeholder="請輸入Email">
-                        </div>
-                        <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
-                            <div class="col mb-3 mb-lg-0">
-                                <p class="form-label text-gray-white-light">課程</p>
-                                <select class="lesson-select form-select bg-gray-dark text-gray-white-light" aria-label="lessons select">
-                                    <option name="lesson" value="0" selected="">請選擇課程</option>
-                                    <option name="lesson" value="1">1堂50分鐘</option>
-                                    <option name="lesson" value="2">3堂50分鐘</option>
-                                    <option name="lesson" value="3">10堂50分鐘</option>
-                                    <option name="lesson" value="4">20堂50分鐘</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <p class="form-label text-gray-white-light">想預約的日期</p>
-                                <input type="text" placeholder="請選擇日期" name="datepicker" class="form-control">
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <label for="SignUp-Place" class="form-label text-gray-white-light">上課地點</label>
-                            <input type="text" name="place" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Place" placeholder="請輸入上課地點">
-                        </div>
-                        <div class="row row-cols-1 row-cols-lg-2 g-0">
-                            <div class="col mb-4 mb-lg-0 d-flex align-items-center">
-                                <p class="fs-8 lh-21 text-white mb-0">NT1600</p>
-                            </div>
-                            <div class="col text-center text-lg-end">
-                                <input type="submit" value="前往結賬" class="gotopay rounded-4 btn bg-gradient-x px-lg-7 fs-8 lh-26">
-                            </div>
-                        </div>                      
-                    </fieldset>
-                </form>
-            </div>
+  <div class="container">
+    <div class="row g-lg-0 align-items-center pb-lg-0 mb-lg-0 ">
+      <div class="col-lg-4 position-relative">
+        <div class="register card bg-gray-light rounded-0 p-4 px-lg-5 py-lg-7">
+          <div class="card-body text-white p-0">
+            <img src="./assets/images/teacher01.jpg"
+              class="photo rounded-circle border border-3 border-primary mb-3 mb-lg-4" alt="teacher01" width="100"
+              height="100">
+            <h3 class="card-title fs-8 lh-26 pb-lg-1 text-center">2022 Python 全攻略｜從入門到實務</h3>
+            <p class="text-primary pb-2 text-center">前端語言</p>
+            <p class="card-text text-start">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-8">
+        <form action="pay.html" method="get" class="signup-form bg-gray-dark py-lg-7 pe-lg-5 p-4">
+          <h1 class="fs-5 lh-35 text-white text-center mb-4 mb-lg-7">課程報名</h1>
+          <fieldset class="mb-5">
+            <legend class="fs-8 lh-26 text-white text-center text-lg-start fw-bold mb-3">選擇付款方式</legend>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="payment" value="credit_card" id="paymentRadio1"
+                autocomplete="off" checked="">
+              <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio1">信用卡付款</label>
+
+              <input type="radio" class="btn-check" name="payment" value="cvs" id="paymentRadio2" autocomplete="off">
+              <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio2">超商繳款</label>
+
+              <input type="radio" class="btn-check" name="payment" value="atm" id="paymentRadio3" autocomplete="off">
+              <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio3">ATM 轉帳</label>
+
+              <input type="radio" class="btn-check" name="payment" value="installment" id="paymentRadio4"
+                autocomplete="off">
+              <label class="btn btn-outline-primary rounded-4 p-3 px-lg-5" for="paymentRadio4">12期分期付款</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="fs-8 lh-26 text-white text-center text-lg-start fw-bold mb-4">訂單資訊</legend>
+            <div class="row row-cols-1 row-cols-lg-2 mb-4 mb-lg-4">
+              <div class="col mb-3 mb-lg-0">
+                <label for="SignUp-Name" class="form-label text-gray-white-light">姓名</label>
+                <input type="text" name="name" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Name"
+                  placeholder="請輸入姓名">
+              </div>
+              <div class="col">
+                <label for="SignUp-Phone" class="form-label text-gray-white-light">電話</label>
+                <input type="tel" name="tel" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Phone"
+                  placeholder="請輸入電話號碼">
+              </div>
+            </div>
+            <div class="mb-3 mb-lg-4">
+              <label for="SignUp-Email" class="form-label text-gray-white-light">Email</label>
+              <input type="email" name="email" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Email"
+                placeholder="請輸入Email">
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+              <div class="col mb-3 mb-lg-0">
+                <p class="form-label text-gray-white-light">課程</p>
+                <select class="lesson-select form-select bg-gray-dark text-gray-white-light"
+                  aria-label="lessons select">
+                  <option name="lesson" value="0" selected="">請選擇課程</option>
+                  <option name="lesson" value="1">1堂50分鐘</option>
+                  <option name="lesson" value="2">3堂50分鐘</option>
+                  <option name="lesson" value="3">10堂50分鐘</option>
+                  <option name="lesson" value="4">20堂50分鐘</option>
+                </select>
+              </div>
+              <div class="col">
+                <p class="form-label text-gray-white-light">想預約的日期</p>
+                <input type="text" placeholder="請選擇日期" name="datepicker" class="form-control">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="SignUp-Place" class="form-label text-gray-white-light">上課地點</label>
+              <input type="text" name="place" class="form-control text-gray-white-light bg-gray-dark" id="SignUp-Place"
+                placeholder="請輸入上課地點">
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-0">
+              <div class="col mb-4 mb-lg-0 d-flex align-items-center">
+                <p class="fs-8 lh-21 text-white mb-0">NT1600</p>
+              </div>
+              <div class="col text-center text-lg-end">
+                <input type="submit" value="前往結賬"
+                  class="gotopay border-0 rounded-4 btn bg-gradient-x px-lg-7 fs-8 lh-26">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
+  </div>
 </section>

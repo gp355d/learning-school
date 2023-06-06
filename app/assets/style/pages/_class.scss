@@ -18,3 +18,8 @@
     height: 32px;
     text-align: center;
 }
+.tobuy{
+  &:hover{
+    color: $primary;
+  }
+}

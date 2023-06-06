@@ -1,35 +1,4 @@
-$(function() {
-  console.log('Hello Bootstrap5');
-  const elem = document.querySelector('input[name="datepicker"]');
-  const datepicker = new Datepicker(elem, {
-    autohide: true,
-    language: 'zh-CN',
-
-  }); 
-});
-
-// var swiper = new Swiper(".course-swiper", {
-//   autoplay: {
-//       disableOnInteraction: false,
-//       delay: 0
-//   },
-//   speed: 1500,
-//   loop: true,
-//   spaceBetween: 16,
-//   slidesPerView: 3,
-//   //多欄
-//   breakpoints: {
-//       768: {
-//           slidesPerView: 6
-//       },
-//       992: {
-//           slidesPerView: 9
-//       }
-//   }
-
-// });
-
-var swiperz = new Swiper(".mySwiper", {
+const swiper01 = new Swiper(".mySwiper", {
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
@@ -44,22 +13,22 @@ var swiperz = new Swiper(".mySwiper", {
   slidesPerView: 3,
   //多欄
   breakpoints: {
-      768: {
-          slidesPerView: 6
-      },
-      992: {
-          slidesPerView: 9
-      }
+    768: {
+      slidesPerView: 6
+    },
+    992: {
+      slidesPerView: 9
+    }
   }
 });
 
-const swiper = new Swiper('.swiperx', {
+const swiper02 = new Swiper('.swiperx', {
   // Optional parameters
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
-  
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -72,7 +41,7 @@ const swiper = new Swiper('.swiperx', {
   },
 });
 
-var swiperz = new Swiper(".mySwiper2", {
+const swiper03 = new Swiper(".mySwiper2", {
   autoplay: {
     disableOnInteraction: false,
     delay: 0
@@ -82,11 +51,25 @@ var swiperz = new Swiper(".mySwiper2", {
   slidesPerView: 3,
   //多欄
   breakpoints: {
-      768: {
-          slidesPerView: 6
-      },
-      992: {
-          slidesPerView: 9
-      }
+    768: {
+      slidesPerView: 6
+    },
+    992: {
+      slidesPerView: 9
+    }
+  }
+});
+$(function () {
+  const elem = document.querySelector('input[name="datepicker"]');
+  const today = new Date();
+  if (elem) {
+    const datepicker = new Datepicker(elem, {
+      autohide: true,
+      language: 'zh-TW',
+      // 設定日期格式
+      format: 'yyyy-mm-dd',
+      // 設定最小日期為今天
+      minDate: today,
+    });
   }
 });

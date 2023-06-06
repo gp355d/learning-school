@@ -253,14 +253,14 @@
   &::before{
     content: '所有課程列表';
   }
-  &:hover{
-    border: 1px solid $white !important;
-    background: $black;
-    color: $white;
-    &::before{
-      content: '立即預約';
-    }
-  }
+  // &:hover{
+  //   // border: 1px solid $white !important;
+  //   // background: $black;
+  //   // color: $white;
+  //   // &::before{
+  //   //   content: '立即預約';
+  //   // }
+  // }
 }
 .advantage-card{
   width: 264px;
@@ -343,7 +343,12 @@
   }
 }
 
-
+.class-card{
+  border: 1px solid transparent;
+  &:hover{
+    border: 1px solid $primary;
+  }
+}
 
 .join{
   background-color: #202020;
@@ -359,22 +364,22 @@
   &::before{
     content: '聯絡我們';
   }
-  &:hover{
-    border: 1px solid $white !important;
-    background: $black;
-    color: $white;
-    &::before{
-      content: '立即預約';
-    }
-  }
+  // &:hover{
+  //   border: 1px solid $white !important;
+  //   background: $black;
+  //   color: $white;
+  //   &::before{
+  //     content: '立即預約';
+  //   }
+  // }
 }
 
 .booking-now{
   border: 0;
   &:hover{
-    background: $gray-light !important;
-    border: 1px solid $white;
-    color: $white;
+    // background: $gray-light !important;
+    // border: 1px solid $white;
+    // color: $white;
   }
 }
 
