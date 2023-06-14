@@ -7,7 +7,9 @@
     }
     .more{
       width: 168px;
-  
+    }
+    &.btn-area a{
+      width: 100%;
     }
   }
   @include media-breakpoint-down(md) {
@@ -21,10 +23,7 @@
     .class-card .more {
       width: 100%;
     }
-    .btn-area {
-      width: 100%;
-    }
-    .btn-area a{
-      width: 48%
+    &.btn-area a{
+      width: 48% !important
     }
   }

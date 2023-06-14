@@ -16,10 +16,10 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #0f0606 !default;
 //新增色系
-$gray-dark: #1C1C1C;
-$gray-light:#2D2D2D;
+$gray-dark: #2B2D37;//#1C1C1C;
+$gray-light:#48516C;//#2D2D2D;
 $gray-white-light:#c1c1c1;
 // scss-docs-end gray-color-variables
 
@@ -80,8 +80,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #62DB54;//#00cc99; // $blue !default;
-$secondary:     #09ACF5;////$gray-600 !default;
+$primary:       #68d0d0;//#62DB54;//#00cc99; // $blue !default;
+$secondary:     #a2a8c9;//09ACF5;////$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;

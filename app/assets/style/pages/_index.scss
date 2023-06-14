@@ -11,7 +11,7 @@
 
 
 .banner {
-  background-color: #202020;
+  background-color: #2B2D37;
   padding: 46px 50px;
   @include media-breakpoint-only(xl) {
     padding: 46px 20px;
@@ -39,13 +39,13 @@
 
 .bg-img{
   height: 535px;
-  background-image: url(../images/bg_home.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @include media-breakpoint-down(sm) {
-      background-image: url(../images/bg_home_mobile.jpg);
-  }
+  // background-image: url(../images/bg_home.jpg);
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // @include media-breakpoint-down(sm) {
+  //     background-image: url(../images/bg_home_mobile.jpg);
+  // }
 }
 .feature{
   // line-height: $line-height-26;
@@ -53,7 +53,7 @@
     border: 1px solid $gray-light;
     &:hover{
       border: 1px solid $primary !important;
-      background-color: #202020;
+      background-color: #2B2D37;
       cursor: pointer;
       border-radius: 12px;
       .icon{
@@ -75,7 +75,7 @@
   // border: 1px solid $black;
   // border: 0;
   &:hover{
-    background: #202020;
+    background: #2B2D37;
     border-radius: 12px;
   }
   @include media-breakpoint-down(xl) {
@@ -351,7 +351,7 @@
 }
 
 .join{
-  background-color: #202020;
+  background-color: #2B2D37;
   padding: 51px 48px;
   .icon{
     font-size: 104px;
