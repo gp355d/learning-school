@@ -1,7 +1,9 @@
-const swiper01 = new Swiper(".mySwiper", {
+"use strict";
+
+var swiper01 = new Swiper(".mySwiper", {
   scrollbar: {
     el: '.swiper-scrollbar',
-    draggable: true,
+    draggable: true
   },
   autoplay: {
     disableOnInteraction: false,
@@ -21,27 +23,23 @@ const swiper01 = new Swiper(".mySwiper", {
     }
   }
 });
-
-const swiper02 = new Swiper('.swiperx', {
+var swiper02 = new Swiper('.swiperx', {
   // Optional parameters
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
-
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination'
   },
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    prevEl: '.swiper-button-prev'
+  }
 });
-
-const swiper03 = new Swiper(".mySwiper2", {
+var swiper03 = new Swiper(".mySwiper2", {
   autoplay: {
     disableOnInteraction: false,
     delay: 0
@@ -60,16 +58,18 @@ const swiper03 = new Swiper(".mySwiper2", {
   }
 });
 $(function () {
-  const elem = document.querySelector('input[name="datepicker"]');
-  const today = new Date();
+  var elem = document.querySelector('input[name="datepicker"]');
+  var today = new Date();
+
   if (elem) {
-    const datepicker = new Datepicker(elem, {
+    var datepicker = new Datepicker(elem, {
       autohide: true,
       language: 'zh-TW',
       // 設定日期格式
       format: 'yyyy-mm-dd',
       // 設定最小日期為今天
-      minDate: today,
+      minDate: today
     });
   }
 });
+//# sourceMappingURL=all.js.map

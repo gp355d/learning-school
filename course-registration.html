@@ -1,10 +1,86 @@
----
-title: 課程報名
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>課程報名</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.3/dist/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="bg-gray-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray-light py-4 under-line">
+      <div class="container">
+        <h1>
+          <a class="navbar-brand" href="index.html">
+          </a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="material-symbols-outlined text-primary align-bottom">
+            drag_handle
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link fs-md-8 lh-md-26" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-md-8 lh-md-26" href="category.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-md-8 lh-md-26 d-flex justify-content-center align-items-center pe-0" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="material-icons" style="font-size: 18px;margin-right:6px;">account_circle</span>
+                  <span class="">登入</span>
+              </a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-white bg-gray-light text-white px-4 pt-4 pb-7">
+          <div class="modal-header border-bottom-0 p-0">
+            <h3 class="modal-title text-center flex-grow-1 fs-4 lh-35 text-white" id="exampleModalLabel">登入</h3>
+            <button type="button" class="btn-close btn-close-white p-0" data-bs-dismiss="modal" aria-label="Close" placeholder="請輸入信箱"></button>
+          </div>
+          <div class="modal-body p-0">
+            <form class="max-331">
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label">信箱</label>
+                <input type="email" class="form-control rounded bg-gray-dark text-gray-white-light" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入信箱">
+              </div>
+              <div class="mb-4">
+                <label for="exampleInputPassword1" class="form-label">密碼</label>
+                <input type="password" class="form-control rounded bg-gray-dark text-gray-white-light" id="exampleInputPassword1" placeholder="請輸入密碼">
+              </div>
+              <button type="submit" class="btn bg-gradient-x w-100 fs-8 lh-26 mb-7 border-0">登入</button>
+            </form>
+          </div>
+          <div class="modal-footer border-top-0 max-331 p-0">
+            <h3 class="loginway text-gray-white-light w-100 fs-9 lh-24 mb-3 mx-0 mt-0">其他登入方式</h3>
+            <button type="button" class="rounded position-relative fb-way btn btn-outline-white text-white w-100 border border-white mx-0 mt-0 mb-4" data-bs-dismiss="modal">
+              <img src="./assets/images/icon_fb.svg" alt="facebook" class="position-absolute icon">
+              Facebook 登入
+            </button>
+            <button type="button" class="rounded position-relative google-way btn btn-outline-white text-white w-100 border border-white mx-0 mt-0" data-bs-dismiss="modal">
+              <img src="./assets/images/icon_google.svg" alt="google" class="position-absolute icon">
+              Google 登入
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 <section class="bg-gray-dark pt-4 pb-3">
   <div class="container">
     <div class="row justify-content-center">
@@ -117,3 +193,17 @@ current: index
     </div>
   </div>
 </section>
+
+    <footer class="text-center py-4 font-Azeret-Mono">
+      <div class="container">
+        <p class="m-0 text-gray-white fs-11 lh-14 fs-md-9 lh-md-19">Learning in home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.3/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.3/dist/js/locales/zh-TW.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
