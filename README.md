@@ -4,7 +4,7 @@
 
 ![01](./app/assets/images/01.png)
 
-![02](./app/assets/images/01.png)
+![02](./app/assets/images/02.png)
 
 ## 開發技術
 
